@@ -1,0 +1,32 @@
+.profile-form
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.input-file
+  width: 0.1px 
+  height: 0.1px
+  opacity: 0
+  overflow: hidden
+  position: absolute
+  z-index: -1
+
+  &__icon
+    width: 23px
+    height: 26px
+    margin-bottom: 10px
+
+.input-file + label
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  background-color: $grey-for-btn
+  color: #c0c0c2
+  width: 120px
+  height: 120px
+  text-align: center
+  border-radius: 25px
+  font-weight: 400
+  margin-top: 20px

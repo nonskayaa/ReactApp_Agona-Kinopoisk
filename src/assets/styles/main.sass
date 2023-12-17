@@ -1,0 +1,153 @@
+@import 'fonts.sass' 
+@import 'header.sass' 
+@import 'colors.sass' 
+@import 'firstVisitPage.sass' 
+@import 'loginPage.sass' 
+@import 'collectionPage.sass'
+@import 'filmDetails.sass'
+@import 'searchPage.sass'
+@import 'addFilmPage.sass'
+@import 'profilePage.sass'
+@import 'filmIcon.sass'
+
+
+*
+  color: black
+  box-sizing: border-box
+  font-family: "SFProText"
+  font-weight: 500
+  font-size: 18px
+
+body, p, h1,h2,h3,h4,h5,h6,li,ul
+  margin: 0
+  padding: 0
+
+html
+  overflow-x: hidden
+  margin-right: calc(-1 * (100vw - 100%))
+a
+  text-decoration: none
+
+
+
+button
+  border: none
+  border-radius: 30px
+  display: flex
+  align-items: center
+  padding: 8px 10px
+  background: none
+
+.btn__icon
+  margin-right: 6px
+  fill: $custom-blue
+
+
+.active .btn-nav
+  background-color: $custom-blue
+  color: #FFFFFF
+  
+.active .btn__icon
+  fill: #FFFFFF
+
+.active .btn-profile
+  border: 3px solid $custom-blue
+
+
+.btn-profile
+  padding: 0px
+
+
+.btn-save
+  border: 3px solid $custom-blue
+  margin-top: 30px
+
+.main-container
+  display: flex
+  flex-direction: column
+  width: 100%
+  padding: 150px 150px 100px 150px
+  align-items: center
+  justify-content: center
+  box-sizing: border-box
+  // height: calc(100vh - 64px)
+
+
+.title
+  font-weight: 600
+  font-size: 40px
+  letter-spacing: -1px
+
+
+
+.rate-icon
+    color: $custom-blue
+    background: white
+    border-radius: 30px
+    padding: 2px 6px
+    border: 3px solid $custom-blue    
+
+input
+  border: none
+  border-bottom: 1px solid $grey-for-input
+  padding: 20px 180px 20px 0px
+  &::-webkit-input-placeholder 
+    font-family: "SFProText"
+    font-weight: 400
+    color: $grey-for-input
+    font-size: 17px
+  &:focus 
+    outline: none     
+
+    &::-webkit-input-placeholder 
+      color: transparent
+
+  
+.input
+  &__title
+  font-size: 22px
+  font-weight: 600
+
+  &__item
+    margin-top: 20px
+    text-align: left
+
+.switch-btns_container
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 30px
+
+
+.button-box 
+  display: flex
+  justify-content: space-evenly
+  width: 340px
+  position: relative
+  border-radius: 9px
+  background: $grey-for-btn
+
+
+.toggle-btn 
+  color: black
+  padding: 8px 10px 
+  cursor: pointer
+  background: transparent
+  border: 0
+  outline: none
+  position: relative
+  text-align: center
+
+
+#btn 
+  left: 3px
+  top: 0
+  position: absolute
+  width: 170px
+  height: 31px
+  margin-top: 3px 
+  background: white
+  border-radius: 9px
+  transition: .5s
+  box-shadow: 4px 4px 8px 0px $black-for-shadow
+
